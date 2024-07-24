@@ -1,0 +1,24 @@
+.content {
+    color: aliceblue;
+}
+
+/* #root {
+    background-color: black;
+} */
+
+/* .ant-table-cell {
+    background-color: black !important;
+}
+
+.ant-empty-description {
+    color: aliceblue !important;
+}
+
+.ant-table-thead .ant-table-cell {
+    background-color: #e9bc70 !important;
+    color: aliceblue !important;
+} */
+
+.ant-pagination-options {
+    display: none !important;
+}

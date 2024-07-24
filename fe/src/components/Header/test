@@ -1,0 +1,586 @@
+<header id="header" class="header has-sticky sticky-jump">
+    <div class="header-wrapper">
+        <div id="masthead" class="header-main show-logo-center hide-for-sticky nav-dark">
+            <div class="header-inner flex-row container logo-center medium-logo-center" role="navigation">
+
+                <!-- Logo -->
+                <div id="logo" class="flex-col logo">
+
+                    <!-- Header logo -->
+                    <a href="https://caohungdiamond.com/"
+                        title="Cao Hùng Diamond - Phân Phối Sỉ Và Lẻ Kim Cương Việt Nam" rel="home">
+                        <img width="130" height="122"
+                            src="https://caohungdiamond.com/wp-content/uploads/2020/08/cropped-logo-caohung250.png"
+                            class="header_logo header-logo" alt="Cao Hùng Diamond"><img width="130" height="122"
+                            src="https://caohungdiamond.com/wp-content/uploads/2020/08/cropped-logo-caohung250.png"
+                            class="header-logo-dark" alt="Cao Hùng Diamond"></a>
+                </div>
+
+                <!-- Mobile Left Elements -->
+                <div class="flex-col show-for-medium flex-left">
+                    <ul class="mobile-nav nav nav-left ">
+                    </ul>
+                </div>
+
+                <!-- Left Elements -->
+                <div class="flex-col hide-for-medium flex-left">
+                    <ul class="header-nav header-nav-main nav nav-left  nav-uppercase">
+                        <li class="html custom html_topbar_left"><img
+                                src="/wp-content/uploads/2022/06/Sparkling-Diamond.png" alt="Icon hệ thống kim cương"
+                                data-lazy-src="/wp-content/uploads/2022/06/Sparkling-Diamond.png"
+                                data-ll-status="loaded" class="entered lazyloaded"><noscript><img
+                                    src="/wp-content/uploads/2022/06/Sparkling-Diamond.png"
+                                    alt="Icon hệ thống kim cương" /></noscript> Hệ thống showrooms
+                            <br>CN HCM: 35 Trần Phú, Phường 4, quận 5, TP. HCM<br>
+                            CN CT: 53 Trần Phú, Ninh Kiều, Cần Thơ
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Elements -->
+                <div class="flex-col hide-for-medium flex-right">
+                    <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
+                        <li class="html custom html_topbar_right"><i class="fa-solid fa-phone"></i> 0933 1977 55 - 0877
+                            056 688</li>
+                        <li class="cart-item has-icon">
+
+                            <a href="https://caohungdiamond.com/gio-hang/" class="header-cart-link is-small"
+                                title="Giỏ hàng">
+
+                                <span class="header-cart-title">
+                                    Giỏ hàng </span>
+
+                                <i class="icon-shopping-bag" data-icon-label="0">
+                                </i>
+                            </a>
+
+
+                        </li>
+                        <li class="header-search-form search-form html relative has-icon">
+                            <div class="header-search-form-wrapper">
+                                <div class="searchform-wrapper ux-search-box relative form-flat is-normal">
+                                    <form role="search" method="get" class="searchform"
+                                        action="https://caohungdiamond.com/">
+                                        <div class="flex-row relative">
+                                            <div class="flex-col flex-grow">
+                                                <label class="screen-reader-text"
+                                                    for="woocommerce-product-search-field-0">Tìm kiếm:</label>
+                                                <input type="search" id="woocommerce-product-search-field-0"
+                                                    class="search-field mb-0" placeholder="Tìm kiếm…" value="" name="s"
+                                                    autocomplete="off">
+                                                <input type="hidden" name="post_type" value="product">
+                                            </div>
+                                            <div class="flex-col">
+                                                <button type="submit" value="Tìm kiếm"
+                                                    class="ux-search-submit submit-button secondary button  icon mb-0"
+                                                    aria-label="Submit">
+                                                    <i class="icon-search"></i> </button>
+                                            </div>
+                                        </div>
+                                        <div class="live-search-results text-left z-top">
+                                            <div class="autocomplete-suggestions"
+                                                style="position: absolute; display: none; max-height: 300px; z-index: 9999;">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Right Elements -->
+                <div class="flex-col show-for-medium flex-right">
+                    <ul class="mobile-nav nav nav-right ">
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="top-divider full-width"></div>
+            </div>
+        </div>
+        <div id="wide-nav" class="header-bottom wide-nav nav-dark flex-has-center">
+            <div class="flex-row container">
+
+
+                <div class="flex-col hide-for-medium flex-center">
+                    <ul class="nav header-nav header-bottom-nav nav-center  nav-uppercase">
+                        <li id="menu-item-6344"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1840 current_page_item menu-item-6344 active menu-item-design-default">
+                            <a href="https://caohungdiamond.com/" aria-current="page" class="nav-top-link">Trang chủ</a>
+                        </li>
+                        <li id="menu-item-6346"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-6346 menu-item-design-container-width menu-item-has-block has-dropdown has-icon-left">
+                            <a href="https://caohungdiamond.com/trang-suc-kim-cuong/" class="nav-top-link"
+                                aria-expanded="false" aria-haspopup="menu"><img class="ux-menu-icon entered lazyloaded"
+                                    width="25" height="25"
+                                    src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-nu.png"
+                                    alt="Icon nhẫn kim cương"
+                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-nu.png"
+                                    data-ll-status="loaded"><noscript><img class="ux-menu-icon" width="25" height="25"
+                                        src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-nu.png"
+                                        alt="Icon nhẫn kim cương" /></noscript>Trang sức kim cương<i
+                                    class="icon-angle-down"></i></a>
+                            <div class="sub-menu nav-dropdown">
+                                <div class="row row-small" id="row-343878564">
+
+
+                                    <div id="col-153294758" class="col small-12 large-12">
+                                        <div class="col-inner">
+
+
+
+                                            <div class="mega-menu" id="362-megamenu">
+                                                <div class="row row-small">
+                                                    <div class="col large-3">
+                                                        <div class="col-inner">
+                                                            <div class="menu-tab">
+
+                                                                <a href="https://caohungdiamond.com/nhan-kim-cuong/"
+                                                                    class="tablinks tablinks-362 active has-child"
+                                                                    onmouseover="openCity_362(event, 363)">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                                        alt="Nhẫn Kim Cương"
+                                                                        data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-nu.png"><noscript><img
+                                                                            src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-nu.png"
+                                                                            alt="Nhẫn Kim Cương"></noscript>
+                                                                    <span class="cat-name">Nhẫn Kim Cương</span>
+                                                                </a>
+                                                                <a href="https://caohungdiamond.com/bong-tai-kim-cuong/"
+                                                                    class="tablinks tablinks-362  "
+                                                                    onmouseover="openCity_362(event, 370)">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                                        alt="Bông Tai Kim Cương"
+                                                                        data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/06/bong-tai.png"><noscript><img
+                                                                            src="https://caohungdiamond.com/wp-content/uploads/2022/06/bong-tai.png"
+                                                                            alt="Bông Tai Kim Cương"></noscript>
+                                                                    <span class="cat-name">Bông Tai Kim Cương</span>
+                                                                </a>
+                                                                <a href="https://caohungdiamond.com/mat-day-chuyen-kim-cuong/"
+                                                                    class="tablinks tablinks-362  "
+                                                                    onmouseover="openCity_362(event, 384)">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                                        alt="Mặt Dây Chuyền Kim Cương"
+                                                                        data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2024/04/i-mat-day-chuyen-kim-cuong.png"><noscript><img
+                                                                            src="https://caohungdiamond.com/wp-content/uploads/2024/04/i-mat-day-chuyen-kim-cuong.png"
+                                                                            alt="Mặt Dây Chuyền Kim Cương"></noscript>
+                                                                    <span class="cat-name">Mặt Dây Chuyền Kim
+                                                                        Cương</span>
+                                                                </a>
+                                                                <a href="https://caohungdiamond.com/vong-tay-kim-cuong/"
+                                                                    class="tablinks tablinks-362  "
+                                                                    onmouseover="openCity_362(event, 438)">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                                        alt="Lắc tay, vòng tay kim cương"
+                                                                        data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2023/11/icon-vong-tay-kim-cuong.png"><noscript><img
+                                                                            src="https://caohungdiamond.com/wp-content/uploads/2023/11/icon-vong-tay-kim-cuong.png"
+                                                                            alt="Lắc tay, vòng tay kim cương"></noscript>
+                                                                    <span class="cat-name">Lắc tay, vòng tay kim
+                                                                        cương</span>
+                                                                </a>
+                                                                <a href="https://caohungdiamond.com/vo-mat-day-chuyen-kim-cuong/"
+                                                                    class="tablinks tablinks-362  "
+                                                                    onmouseover="openCity_362(event, 369)">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                                        alt="Vỏ Mặt Dây Chuyền Kim Cương"
+                                                                        data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/08/vo-mat-day-chuyen.png"><noscript><img
+                                                                            src="https://caohungdiamond.com/wp-content/uploads/2022/08/vo-mat-day-chuyen.png"
+                                                                            alt="Vỏ Mặt Dây Chuyền Kim Cương"></noscript>
+                                                                    <span class="cat-name">Vỏ Mặt Dây Chuyền Kim
+                                                                        Cương</span>
+                                                                </a>
+                                                                <a href="https://caohungdiamond.com/vo-nhan-kim-cuong/"
+                                                                    class="tablinks tablinks-362  has-child"
+                                                                    onmouseover="openCity_362(event, 365)">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                                        alt="Vỏ Nhẫn kim Cương"
+                                                                        data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/06/vo-nhan.png"><noscript><img
+                                                                            src="https://caohungdiamond.com/wp-content/uploads/2022/06/vo-nhan.png"
+                                                                            alt="Vỏ Nhẫn kim Cương"></noscript>
+                                                                    <span class="cat-name">Vỏ Nhẫn kim Cương</span>
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col large-9">
+                                                        <div class="col-inner">
+                                                            <div id="363"
+                                                                class="menu-tabcontent menu-tabcontent-362 active">
+                                                                <div class="row row-small">
+                                                                    <div class="col large-4">
+                                                                        <div class="col-inner">
+                                                                            <ul class="mega-menu-child">
+
+                                                                                <li>
+                                                                                    <a
+                                                                                        href="https://caohungdiamond.com/nhan-kim-cuong/nhan-nam/">Nhẫn
+                                                                                        Kim Cương Nam</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a
+                                                                                        href="https://caohungdiamond.com/nhan-kim-cuong/nhan-nu/">Nhẫn
+                                                                                        Kim Cương Nữ</a>
+                                                                                </li>
+
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col large-8">
+                                                                        <div class="col-inner">
+                                                                            <div class="mega-banner">
+                                                                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E"
+                                                                                    alt="Nhẫn Kim Cương Tự Nhiên GIA Đẹp Giá Rẻ Cao Cấp"
+                                                                                    width="100%"
+                                                                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2023/09/banner-nhan-kim-cuong.jpg"><noscript><img
+                                                                                        src="https://caohungdiamond.com/wp-content/uploads/2023/09/banner-nhan-kim-cuong.jpg"
+                                                                                        alt="Nhẫn Kim Cương Tự Nhiên GIA Đẹp Giá Rẻ Cao Cấp"
+                                                                                        width="100%" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="370" class="menu-tabcontent menu-tabcontent-362 ">
+                                                                <div class="row row-small">
+                                                                    <div class="col large-4">
+                                                                        <div class="col-inner">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col large-8">
+                                                                        <div class="col-inner">
+                                                                            <div class="mega-banner">
+                                                                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E"
+                                                                                    alt="Bông tai kim cương"
+                                                                                    width="100%"
+                                                                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/07/bong-tai-kim-cuong.jpg"><noscript><img
+                                                                                        src="https://caohungdiamond.com/wp-content/uploads/2022/07/bong-tai-kim-cuong.jpg"
+                                                                                        alt="Bông tai kim cương"
+                                                                                        width="100%" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="384" class="menu-tabcontent menu-tabcontent-362 ">
+                                                                <div class="row row-small">
+                                                                    <div class="col large-4">
+                                                                        <div class="col-inner">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col large-8">
+                                                                        <div class="col-inner">
+                                                                            <div class="mega-banner">
+                                                                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E"
+                                                                                    alt="Mặt Dây Chuyền Kim Cương"
+                                                                                    width="100%"
+                                                                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2023/09/banner-mat-day-chuyen-kim-cuong.jpg"><noscript><img
+                                                                                        src="https://caohungdiamond.com/wp-content/uploads/2023/09/banner-mat-day-chuyen-kim-cuong.jpg"
+                                                                                        alt="Mặt Dây Chuyền Kim Cương"
+                                                                                        width="100%" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="438" class="menu-tabcontent menu-tabcontent-362 ">
+                                                                <div class="row row-small">
+                                                                    <div class="col large-4">
+                                                                        <div class="col-inner">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col large-8">
+                                                                        <div class="col-inner">
+                                                                            <div class="mega-banner">
+                                                                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E"
+                                                                                    alt="Banner Lắc tay, vòng tay kim cương"
+                                                                                    width="100%"
+                                                                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2023/11/banner-vong-tay-kim-cuong.jpg"><noscript><img
+                                                                                        src="https://caohungdiamond.com/wp-content/uploads/2023/11/banner-vong-tay-kim-cuong.jpg"
+                                                                                        alt="Banner Lắc tay, vòng tay kim cương"
+                                                                                        width="100%" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="369" class="menu-tabcontent menu-tabcontent-362 ">
+                                                                <div class="row row-small">
+                                                                    <div class="col large-4">
+                                                                        <div class="col-inner">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col large-8">
+                                                                        <div class="col-inner">
+                                                                            <div class="mega-banner">
+                                                                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E"
+                                                                                    alt="Vỏ mặt dây chuyền kim cương Cao Hùng"
+                                                                                    width="100%"
+                                                                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/08/vo-mat-day-chuyen-kim-cuong-cao-hung.jpg"><noscript><img
+                                                                                        src="https://caohungdiamond.com/wp-content/uploads/2022/08/vo-mat-day-chuyen-kim-cuong-cao-hung.jpg"
+                                                                                        alt="Vỏ mặt dây chuyền kim cương Cao Hùng"
+                                                                                        width="100%" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="365" class="menu-tabcontent menu-tabcontent-362 ">
+                                                                <div class="row row-small">
+                                                                    <div class="col large-4">
+                                                                        <div class="col-inner">
+                                                                            <ul class="mega-menu-child">
+
+                                                                                <li>
+                                                                                    <a
+                                                                                        href="https://caohungdiamond.com/vo-nhan-kim-cuong/vo-nhan-nam/">Vỏ
+                                                                                        Nhẫn Kim Cương Nam</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a
+                                                                                        href="https://caohungdiamond.com/vo-nhan-kim-cuong/vo-nhan-nu/">Vỏ
+                                                                                        Nhẫn Kim Cương Nữ</a>
+                                                                                </li>
+
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col large-8">
+                                                                        <div class="col-inner">
+                                                                            <div class="mega-banner">
+                                                                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E"
+                                                                                    alt="Vỏ nhân kim cương" width="100%"
+                                                                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/07/vo-nhan-kim-cuong.jpg"><noscript><img
+                                                                                        src="https://caohungdiamond.com/wp-content/uploads/2022/07/vo-nhan-kim-cuong.jpg"
+                                                                                        alt="Vỏ nhân kim cương"
+                                                                                        width="100%" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <script
+                                                src="data:text/javascript;base64,CiAgICAgICAgZnVuY3Rpb24gb3BlbkNpdHlfMzYyKGV2dCwgY2l0eU5hbWUpIHsKICAgICAgICAgICAgdmFyIGksIHRhYmNvbnRlbnQsIHRhYmxpbmtzOwogICAgICAgICAgICB0YWJjb250ZW50ID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgibWVudS10YWJjb250ZW50LTM2MiIpOwogICAgICAgICAgICBmb3IgKGkgPSAwOyBpIDwgdGFiY29udGVudC5sZW5ndGg7IGkrKykgewogICAgICAgICAgICAgICAgLy8gdGFiY29udGVudFtpXS5zdHlsZS5kaXNwbGF5ID0gIm5vbmUiOwogICAgICAgICAgICAgICAgdGFiY29udGVudFtpXS5jbGFzc05hbWUgPSB0YWJjb250ZW50W2ldLmNsYXNzTmFtZS5yZXBsYWNlKCIgYWN0aXZlIiwgIiIpOwogICAgICAgICAgICB9CiAgICAgICAgICAgIHRhYmxpbmtzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgidGFibGlua3MtMzYyIik7CiAgICAgICAgICAgIGZvciAoaSA9IDA7IGkgPCB0YWJsaW5rcy5sZW5ndGg7IGkrKykgewogICAgICAgICAgICAgICAgdGFibGlua3NbaV0uY2xhc3NOYW1lID0gdGFibGlua3NbaV0uY2xhc3NOYW1lLnJlcGxhY2UoIiBhY3RpdmUiLCAiIik7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgLy8gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoY2l0eU5hbWUpLnN0eWxlLmRpc3BsYXkgPSAiYmxvY2siOwogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChjaXR5TmFtZSkuY2xhc3NOYW1lICs9ICIgYWN0aXZlIjsKICAgICAgICAgICAgZXZ0LmN1cnJlbnRUYXJnZXQuY2xhc3NOYW1lICs9ICIgYWN0aXZlIjsKICAgICAgICB9CiAgICA="
+                                                data-rocket-status="executed">
+                                                    function openCity_362(evt, cityName) {
+                                                        var i, tabcontent, tablinks;
+                                                        tabcontent = document.getElementsByClassName("menu-tabcontent-362");
+                                                        for (i = 0; i < tabcontent.length; i++) {
+                                                            // tabcontent[i].style.display = "none";
+                                                            tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+                                                        }
+                                                        tablinks = document.getElementsByClassName("tablinks-362");
+                                                        for (i = 0; i < tablinks.length; i++) {
+                                                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                                        }
+                                                        // document.getElementById(cityName).style.display = "block";
+                                                        document.getElementById(cityName).className += " active";
+                                                        evt.currentTarget.className += " active";
+                                                    }
+                                                </script>
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li id="menu-item-6345"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-6345 menu-item-design-container-width menu-item-has-block has-dropdown has-icon-left">
+                            <a href="https://caohungdiamond.com/trang-suc-cuoi/" class="nav-top-link"
+                                aria-expanded="false" aria-haspopup="menu"><img class="ux-menu-icon entered lazyloaded"
+                                    width="25" height="25"
+                                    src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-cuoi.png"
+                                    alt="Nhẫn cưới kim cương Icon"
+                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-cuoi.png"
+                                    data-ll-status="loaded"><noscript><img class="ux-menu-icon" width="25" height="25"
+                                        src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-cuoi.png"
+                                        alt="Nhẫn cưới kim cương Icon" /></noscript>Trang sức cưới<i
+                                    class="icon-angle-down"></i></a>
+                            <div class="sub-menu nav-dropdown">
+                                <div class="row row-small" id="row-862664933">
+
+
+                                    <div id="col-129762351" class="col small-12 large-12">
+                                        <div class="col-inner">
+
+
+
+                                            <div class="mega-menu" id="371-megamenu">
+                                                <div class="row row-small">
+                                                    <div class="col large-3">
+                                                        <div class="col-inner">
+                                                            <div class="menu-tab">
+
+                                                                <a href="https://caohungdiamond.com/nhan-cuoi-kim-cuong/"
+                                                                    class="tablinks tablinks-371 active has-child"
+                                                                    onmouseover="openCity_371(event, 372)">
+                                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                                        alt="Nhẫn Cưới Kim Cương"
+                                                                        data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-cuoi.png"><noscript><img
+                                                                            src="https://caohungdiamond.com/wp-content/uploads/2022/06/nhan-cuoi.png"
+                                                                            alt="Nhẫn Cưới Kim Cương"></noscript>
+                                                                    <span class="cat-name">Nhẫn Cưới Kim Cương</span>
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col large-9">
+                                                        <div class="col-inner">
+                                                            <div id="372"
+                                                                class="menu-tabcontent menu-tabcontent-371 active">
+                                                                <div class="row row-small">
+                                                                    <div class="col large-4">
+                                                                        <div class="col-inner">
+                                                                            <ul class="mega-menu-child">
+
+                                                                                <li>
+                                                                                    <a
+                                                                                        href="https://caohungdiamond.com/nhan-cuoi-kim-cuong/nhan-cau-hon/">Nhẫn
+                                                                                        Kim Cương Cầu Hôn</a>
+                                                                                </li>
+
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col large-8">
+                                                                        <div class="col-inner">
+                                                                            <div class="mega-banner">
+                                                                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E"
+                                                                                    alt="Nhẫn Cặp, Nhẫn Cưới Kim Cương Đẹp Nhất"
+                                                                                    width="100%"
+                                                                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2023/10/nhan-cap-nhan-cuoi-kim-cuong-caohungdiamond.jpg"><noscript><img
+                                                                                        src="https://caohungdiamond.com/wp-content/uploads/2023/10/nhan-cap-nhan-cuoi-kim-cuong-caohungdiamond.jpg"
+                                                                                        alt="Nhẫn Cặp, Nhẫn Cưới Kim Cương Đẹp Nhất"
+                                                                                        width="100%" /></noscript>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <script
+                                                src="data:text/javascript;base64,CiAgICAgICAgZnVuY3Rpb24gb3BlbkNpdHlfMzcxKGV2dCwgY2l0eU5hbWUpIHsKICAgICAgICAgICAgdmFyIGksIHRhYmNvbnRlbnQsIHRhYmxpbmtzOwogICAgICAgICAgICB0YWJjb250ZW50ID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgibWVudS10YWJjb250ZW50LTM3MSIpOwogICAgICAgICAgICBmb3IgKGkgPSAwOyBpIDwgdGFiY29udGVudC5sZW5ndGg7IGkrKykgewogICAgICAgICAgICAgICAgLy8gdGFiY29udGVudFtpXS5zdHlsZS5kaXNwbGF5ID0gIm5vbmUiOwogICAgICAgICAgICAgICAgdGFiY29udGVudFtpXS5jbGFzc05hbWUgPSB0YWJjb250ZW50W2ldLmNsYXNzTmFtZS5yZXBsYWNlKCIgYWN0aXZlIiwgIiIpOwogICAgICAgICAgICB9CiAgICAgICAgICAgIHRhYmxpbmtzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgidGFibGlua3MtMzcxIik7CiAgICAgICAgICAgIGZvciAoaSA9IDA7IGkgPCB0YWJsaW5rcy5sZW5ndGg7IGkrKykgewogICAgICAgICAgICAgICAgdGFibGlua3NbaV0uY2xhc3NOYW1lID0gdGFibGlua3NbaV0uY2xhc3NOYW1lLnJlcGxhY2UoIiBhY3RpdmUiLCAiIik7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgLy8gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoY2l0eU5hbWUpLnN0eWxlLmRpc3BsYXkgPSAiYmxvY2siOwogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChjaXR5TmFtZSkuY2xhc3NOYW1lICs9ICIgYWN0aXZlIjsKICAgICAgICAgICAgZXZ0LmN1cnJlbnRUYXJnZXQuY2xhc3NOYW1lICs9ICIgYWN0aXZlIjsKICAgICAgICB9CiAgICA="
+                                                data-rocket-status="executed">
+                                                    function openCity_371(evt, cityName) {
+                                                        var i, tabcontent, tablinks;
+                                                        tabcontent = document.getElementsByClassName("menu-tabcontent-371");
+                                                        for (i = 0; i < tabcontent.length; i++) {
+                                                            // tabcontent[i].style.display = "none";
+                                                            tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+                                                        }
+                                                        tablinks = document.getElementsByClassName("tablinks-371");
+                                                        for (i = 0; i < tablinks.length; i++) {
+                                                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                                        }
+                                                        // document.getElementById(cityName).style.display = "block";
+                                                        document.getElementById(cityName).className += " active";
+                                                        evt.currentTarget.className += " active";
+                                                    }
+                                                </script>
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li id="menu-item-6471"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6471 menu-item-design-default has-icon-left">
+                            <a href="https://caohungdiamond.com/bang-gia-kim-cuong/" class="nav-top-link"><img
+                                    class="ux-menu-icon entered lazyloaded" width="25" height="25"
+                                    src="https://caohungdiamond.com/wp-content/uploads/2024/04/Vien-Kim-Cuong-icon.png"
+                                    alt="Viên kim cương Icon"
+                                    data-lazy-src="https://caohungdiamond.com/wp-content/uploads/2024/04/Vien-Kim-Cuong-icon.png"
+                                    data-ll-status="loaded"><noscript><img class="ux-menu-icon" width="25" height="25"
+                                        src="https://caohungdiamond.com/wp-content/uploads/2024/04/Vien-Kim-Cuong-icon.png"
+                                        alt="Viên kim cương Icon" /></noscript>Bảng giá kim cương</a></li>
+                        <li id="menu-item-28272"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28272 menu-item-design-default">
+                            <a href="https://caohungdiamond.com/blog/" class="nav-top-link">Kiến thức trang sức</a>
+                        </li>
+                        <li id="menu-item-28273"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28273 menu-item-design-default">
+                            <a href="https://caohungdiamond.com/blog/kien-thuc-kim-cuong/" class="nav-top-link">Kiến
+                                thức kim cương</a></li>
+                        <li id="menu-item-6347"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6347 menu-item-design-default">
+                            <a href="https://caohungdiamond.com/gioi-thieu/" class="nav-top-link">Giới thiệu</a></li>
+                        <li id="menu-item-6409"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6409 menu-item-design-default">
+                            <a href="https://caohungdiamond.com/lien-he/" class="nav-top-link">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="flex-col show-for-medium flex-grow">
+                    <ul class="nav header-bottom-nav nav-center mobile-nav  nav-uppercase">
+                        <li class="nav-icon has-icon">
+                            <a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay"
+                                data-color="dark" class="is-small" aria-label="Menu" aria-controls="main-menu"
+                                aria-expanded="false">
+
+                                <i class="icon-menu"></i>
+                            </a>
+                        </li>
+                        <li class="html custom html_nav_position_text"><a href="https://caohungdiamond.com/"><img
+                                    src="/wp-content/uploads/2020/08/cropped-logo-caohung250.png"
+                                    alt="Logo Cao Hùng Diamond Mobile" style="max-height: 60px;"></a></li>
+                        <li class="cart-item has-icon">
+
+                            <a href="https://caohungdiamond.com/gio-hang/" class="header-cart-link is-small"
+                                title="Giỏ hàng">
+
+                                <span class="header-cart-title">
+                                    Giỏ hàng </span>
+
+                                <i class="icon-shopping-bag" data-icon-label="0">
+                                </i>
+                            </a>
+
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bg-container fill">
+            <div class="header-bg-image fill"></div>
+            <div class="header-bg-color fill"></div>
+        </div>
+    </div>
+</header>

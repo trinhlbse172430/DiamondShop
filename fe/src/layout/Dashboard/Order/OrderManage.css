@@ -1,0 +1,28 @@
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 12px;
+
+    height: 12px;
+
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+
+    border-radius: 6px;
+
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+
+}
