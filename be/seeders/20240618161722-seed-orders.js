@@ -154,7 +154,7 @@ module.exports = {
 					"PromotionID": "PRO001",
 					"CustomerID": 2,
 					"EmployeeIDShip": "EMP001",
-					"OrdNote": null,
+					"OrdNote": "123",
 					"OrdStatus": 3
 				}
 			],

@@ -102,7 +102,7 @@ const items = [
     {
         key: '2',
         icon: <PieChartOutlined />,
-        label: 'KIẾN THỨC TRAGN SỨC',
+        label: 'KIẾN THỨC TRANG SỨC',
     },
     {
         key: '3',

@@ -159,81 +159,81 @@ const EmployeeCreateModal = ({ visible, onCreate, onCancel, empData, roleList })
     return (
         <Modal
             visible={visible}
-            title="Create Employee"
-            okText="Create"
-            cancelText="Cancel"
+            title="Tạo mới nhân viên"
+            okText="Tạo mới"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleCreateEmployee}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Name:</label>
+                <label>Tên nhân viên:</label>
                 <Input
-                    placeholder="Enter name"
+                    placeholder="Nhập tên nhân viên"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Address:</label>
+                <label>Địa chỉ:</label>
                 <Input
-                    placeholder="Enter address"
+                    placeholder="Nhập địa chỉ"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Phone:</label>
+                <label>Số điện thoại:</label>
                 <Input
-                    placeholder="Enter phone"
+                    placeholder="Nhập số điện thoại"
                     value={empPhone}
                     onChange={(e) => setEmpPhone(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Username:</label>
+                <label>Tài khoản:</label>
                 <Input
-                    placeholder="Enter username"
+                    placeholder="Nhập tải khoản"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Email:</label>
+                <label>Gmail:</label>
                 <Input
-                    placeholder="Enter email"
+                    placeholder="Nhập Gmail"
                     value={gmail}
                     onChange={(e) => setGmail(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Note:</label>
+                <label>Ghi chú:</label>
                 <Input.TextArea
-                    placeholder="Enter note"
+                    placeholder="Nhật ghi chứ"
                     value={note}
                     onChange={(e) => setNote(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Password:</label>
+                <label>Mật khẩu:</label>
                 <Input.Password
-                    placeholder="Enter password"
+                    placeholder="Nhập mật khẩu"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Birthday:</label>
+                <label>Ngày sinh:</label>
                 <DatePicker
                     style={{ width: '100%' }}
-                    placeholder="Select birthday"
+                    placeholder="Chọn ngày sinh nhật"
                     value={birthday}
                     onChange={(date) => setBirthday(date ? dayjs(date) : null)}
                     disabledDate={disabledDate} // Disable future dates
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Role:</label>
+                <label>Chức vụ:</label>
                 <Select
                     style={{ width: '100%' }}
                     placeholder="Select role"

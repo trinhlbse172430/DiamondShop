@@ -61,14 +61,14 @@ const EditModal = ({ visible, onCreate, onCancel, dataEdit }) => {
     return (
         <Modal
             visible={visible}
-            title="Edit Price"
-            okText="Edit"
-            cancelText="Cancel"
+            title="Cập nhật giá kim cương"
+            okText="Cập nhật"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpdateDiaPrice}
         >
             {contextHolder}
-            <label>Diamond Price:</label>
+            <label>Giá kim cương:</label>
             <Input
                 type="number"
                 placeholder="Price"
@@ -438,7 +438,7 @@ const BasicTable = () => {
 
     const columns = [
         {
-            title: 'DiamondID',
+            title: 'Mã Kim cương',
             dataIndex: 'DiamondID',
             ...getColumnSearchProps('DiamondID'),
             key: 'DiamondID',
@@ -446,7 +446,7 @@ const BasicTable = () => {
             sortOrder: sortedInfo.columnKey === 'DiamondID' ? sortedInfo.order : null,
         },
         {
-            title: 'DiaOrigin',
+            title: 'Nguồn gốc',
             dataIndex: 'DiaOriginID',
             render: (text, record) => {
                 const origin = diaOrigin.find(item => item.DiaOriginID === record.DiaOriginID);
@@ -478,7 +478,7 @@ const BasicTable = () => {
             },
         },
         {
-            title: 'Độ trong',
+            title: 'Độ trong suốt',
             dataIndex: 'DiaClarityID',
             render: (text, record) => {
                 const clarity = diaClarity.find(item => item.DiaClarityID === record.DiaClarityID);
@@ -493,7 +493,7 @@ const BasicTable = () => {
             },
         },
         {
-            title: 'Cân nặng',
+            title: 'Trọng lượng',
             dataIndex: 'DiaWeight',
 
         },
@@ -519,7 +519,7 @@ const BasicTable = () => {
                     <Button onClick={(e) => {
                         e.stopPropagation();
                         handleGetDiamondById(record.DiamondID)
-                    }}>EDIT PRICE</Button>
+                    }}>Cập nhật giá</Button>
                 </Space>
             ),
         },
@@ -554,7 +554,7 @@ const BasicTable = () => {
                         <ButtonCustomize
                             variant="contained"
                             // component={RouterLink}
-                            nameButton="Add Diamond"
+                            nameButton="Thêm mới kim cương"
                             onClick={handleOpenCreateModal}
                             width="15%"
                             startIcon={<AddCircleOutlineIcon />}

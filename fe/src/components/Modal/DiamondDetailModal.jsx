@@ -137,28 +137,28 @@ const DiamondDetailModal = ({ visible, onCreate, onCancel, dataDetail }) => {
     return (
         <Modal
             visible={visible}
-            title="Create Gold"
-            okText="Create"
-            cancelText="Cancel"
+            title="Tạo mới kim cương"
+            okText="Tạo mới"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleCreateDiamond}
             footer={null}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond ID: {dataDetail.DiamondID}</label>
+                <label>Mã kim cương: {dataDetail.DiamondID}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>GIA ID: {dataDetail.GIAID}</label>
+                <label>Mã GIA: {dataDetail.GIAID}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Weight: {dataDetail.DiaWeight}</label>
+                <label>Trọng lương kim cương: {dataDetail.DiaWeight}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Round Cut: {dataDetail.DiaCut}</label>
+                <label>Hình dáng kim cương: {dataDetail.DiaCut}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Image:</label>
+                <label>Hình ảnh:</label>
 
                 <img
                     src={DiaImage}

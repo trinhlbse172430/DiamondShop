@@ -144,19 +144,19 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
     return (
         <Modal
             visible={visible}
-            title="Create Diamond"
-            okText="Create"
-            cancelText="Cancel"
+            title="Tạo mới kim cương"
+            okText="Tạo mới"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleCreateDiamond}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Dia Origin:</label>
+                <label>Nguồn gốc kim cương:</label>
                 {DiaOriginList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond origin"
+                        placeholder="Chọn nguồn gốc kim cương"
                         onChange={(value) => setDiaOriginID(value)}
                         value={DiaOriginID}
                     >
@@ -169,11 +169,11 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Dia Color:</label>
+                <label>Màu kim cương:</label>
                 {DiaColorList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond color"
+                        placeholder="Chọn màu kim cương"
                         onChange={(value) => setDiaColorID(value)}
                         value={DiaColorID}
                     >
@@ -186,11 +186,11 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Dia Clarity:</label>
+                <label>Độ tinh khiết:</label>
                 {DiaClarityList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond clarity"
+                        placeholder="Chọn độ tinh khiết"
                         onChange={(value) => setDiaClarityID(value)}
                         value={DiaClarityID}
                     >
@@ -203,19 +203,19 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond Weight:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={20} defaultValue={1} onChange={(value) => setDiaWeight(value)} />
+                <label>Trọng lượng kim cương:</label>
+                <InputNumber placeholder="Nhập trọng lượng kim cương" style={{ width: '100%' }} min={3} max={20} onChange={(value) => setDiaWeight(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond Price:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={1000000000} defaultValue={100000} onChange={(value) => setDiaPrice(value)} />
+                <label>Giá kim cương:</label>
+                <InputNumber placeholder="Nhập giá kim cương" style={{ width: '100%' }} min={1} max={1000000000} onChange={(value) => setDiaPrice(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond Cut:</label>
+                <label>Hình dáng kim cương:</label>
                 {/* Select from round, oval, marquise, pear, heart, emerald, princess, radiant */}
                 <Select
                     style={{ width: '100%' }}
-                    placeholder="Select diamond cut"
+                    placeholder="Chọn hình dáng kim cương"
                     onChange={(value) => setDiaCut(value)}
                     value={DiaCut}
                 >

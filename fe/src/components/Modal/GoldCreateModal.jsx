@@ -12,6 +12,7 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
     const [GoldWeight, setGoldWeight] = useState(1);
     const [GoldTypeList, setGoldTypeList] = useState([]);
     const [GoldAgeList, setGoldAgeList] = useState([]);
+    const [GoldPrice, setGoldPrice] = useState(100000);
 
     useEffect(() => {
         if (visible) {
@@ -47,7 +48,7 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
     //--------------------- HANDLE CREATE GOLD ----------------------------
     const handleCreate = async () => {
         //check if all fields are filled
-        if (!GoldTypeID || !GoldAgeID || !GoldWeight) {
+        if (!GoldTypeID || !GoldAgeID || !GoldWeight || !GoldPrice) {
             openNotificationWithIcon('error', 'Please fill all fields');
             return;
         }
@@ -80,6 +81,7 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
                 GoldTypeID,
                 GoldAgeID,
                 GoldWeight,
+                GoldPrice,
                 GoldPicture: 'picture',
                 GoldUnit: 'chỉ'
             }).then((response) => {
@@ -105,19 +107,19 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
     return (
         <Modal
             visible={visible}
-            title="Create Gold"
-            okText="Create"
-            cancelText="Cancel"
+            title="Tạo vàng mới"
+            okText="Tạo mới"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleCreate}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>GoldType:</label>
+                <label>Loại vàng:</label>
                 {GoldTypeList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select gold type"
+                        placeholder="Chọn loại vàng"
                         onChange={(value) => setGoldTypeID(value)}
                         value={GoldTypeID}
                     >
@@ -130,11 +132,11 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>GoldAge:</label>
+                <label>Tuổi vàng:</label>
                 {GoldAgeList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select gold age"
+                        placeholder="Chọn tuổi vàng"
                         onChange={(value) => setGoldAgeID(value)}
                         value={GoldAgeID}
                     >
@@ -147,8 +149,12 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Gold Weight:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={20} defaultValue={1} onChange={(value) => setGoldWeight(value)} />
+                <label>Trọng lượng vàng:</label>
+                <InputNumber  placeholder="Nhập trọng lượng vàng" style={{ width: '100%' }} min={1} max={20} onChange={(value) => setGoldWeight(value)} />
+            </div>
+            <div style={{ marginBottom: 16 }}>
+                <label>Giá vàng:</label>
+                <InputNumber  placeholder="Nhập trọng giá vàng" style={{ width: '100%' }} min={1} max={1000000000} onChange={(value) => setGoldPrice(value)} />
             </div>
         </Modal>
     );

@@ -279,8 +279,6 @@ export default function Checkout() {
                     window.location.href = urlPayment.data?.link_payment;
                     console.log(urlPayment.data?.link_payment);
                 }
-                
-
 
                 localStorage.removeItem("cart");
                 handleAddPoint();
@@ -290,6 +288,70 @@ export default function Checkout() {
             console.error(error);
         }
     };
+
+    // const handleCheckout = async () => {
+    //     const orderID = "ORD" + Date.now().toString(36).slice(-4);
+    //     const orderDetailID = "OD" + Date.now().toString(36).slice(-4);
+    //     if (
+    //         order.CusName === "" ||
+    //         order.CusPhone === "" ||
+    //         order.CusAddress === ""
+    //     ) {
+    //         openNotificationWithIcon("error", "Vui lòng nhập đầy đủ thông tin");
+    //         return;
+    //     }
+    //     try {
+    //         const response = await axios.post("/order", {
+    //             ...order,
+    //             CustomerID: context.auth.id,
+    //             OrderID: orderID,
+    //             TotalPrice: total.toString(),
+    //             TotalDetailPrice: totalDetail.toString(),
+    //             DiscountPrice: discountPrice.toString(),
+    //             BonusPointID: BonusPointId,
+    //             PromotionID: promotionId,
+    //         });
+    //         if (response.status === 201) {
+    //             const data = response.data;
+    //             //create order detail
+    //             let orderDetailIdNumber = 1;
+    //             cartList.map(async (product) => {
+    //                 try {
+    //                     await axios.post("/order_detail", {
+    //                         OrderDetailID: orderDetailID + orderDetailIdNumber++,
+    //                         OrderID: orderID,
+    //                         ProductID: product.ProductID,
+    //                         Quantity: product.Quantity,
+    //                         GoldPriceID: product.GoldPriceID,
+    //                         DiaPriceID: product.DiaPriceID,
+    //                         DiaSmallPriceID: product.DiaSmallPriceID,
+    //                         SalePrice: product.TotalPrice,
+    //                         Currency: "VND",
+    //                         CusSize: product.CusSize,
+    //                     });
+
+    //                     if (urlPayment.status === 200 && urlPayment.data) {
+    //                         // window.location.href = urlPayment.data?.link_payment;
+    //                         console.log(urlPayment.data?.link_payment);
+    //                     }
+    //                 } catch (error) {
+    //                     console.error(error);
+    //                 }
+    //             });
+    //             const urlPayment = await axios.post("/create-payment", {
+    //                 OrderID: orderID,
+    //                 TotalPrice: total,
+    //             });
+
+    //             // localStorage.removeItem("cart");
+    //             handleAddPoint();
+
+    //         }
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
+
 
 
     const handleAddPoint = async () => {

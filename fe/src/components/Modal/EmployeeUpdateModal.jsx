@@ -140,15 +140,15 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, empData, roleList })
     return (
         <Modal
             visible={visible}
-            title="Update employee"
-            okText="Update"
-            cancelText="Cancel"
+            title="Cập nhật thông tin nhân viên"
+            okText="Cập nhật"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpdateEmployee}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Name:</label>
+                <label>Tên:</label>
                 <Input
                     placeholder="Enter name"
                     value={name}
@@ -156,67 +156,67 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, empData, roleList })
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Address:</label>
+                <label>Địa chỉ:</label>
                 <Input
-                    placeholder="Enter address"
+                    placeholder="Nhập địa chỉ"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Phone:</label>
+                <label>Số điện thoại:</label>
                 <Input
-                    placeholder="Enter phone"
+                    placeholder="Nhập số điện thoại"
                     value={empPhone}
                     onChange={(e) => setEmpPhone(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Username:</label>
+                <label>Tài khoản:</label>
                 <Input
-                    placeholder="Enter username"
+                    placeholder="Nhập tài khoản"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Email:</label>
+                <label>Gmail:</label>
                 <Input
-                    placeholder="Enter email"
+                    placeholder="Nhập Gmail"
                     value={gmail}
                     onChange={(e) => setGmail(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Note:</label>
+                <label>Ghi chú:</label>
                 <Input.TextArea
-                    placeholder="Enter note"
+                    placeholder="Nhập ghi chú"
                     value={note}
                     onChange={(e) => setNote(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Password:</label>
+                <label>Mật khẩu:</label>
                 <Input.Password
-                    placeholder="Enter password"
+                    placeholder="Nhập mật khẩu"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Birthday:</label>
+                <label>Ngày sinh:</label>
                 <DatePicker
                     style={{ width: '100%' }}
-                    placeholder="Select birthday"
+                    placeholder="Nhập ngày sinh nhật"
                     value={dayjs(birthday)}
                     onChange={(date) => setBirthday(date ? dayjs(date) : null)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Role:</label>
+                <label>Chức vụ:</label>
                 <Select
                     style={{ width: '100%' }}
-                    placeholder="Select role"
+                    placeholder="Chọn chức vụ"
                     onChange={(value) => handleUpdateFunction(value)}
                     value={roleName}
                 >
@@ -227,7 +227,7 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, empData, roleList })
                 </Select>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Status:</label>
+                <label>Trạng thái:</label>
                 <Select
                     style={{ width: '100%' }}
                     placeholder="Select role"

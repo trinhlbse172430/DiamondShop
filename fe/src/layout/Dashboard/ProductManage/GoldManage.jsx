@@ -60,14 +60,14 @@ const EditModal = ({ visible, onCreate, onCancel, dataEdit }) => {
     return (
         <Modal
             visible={visible}
-            title="Edit Price"
-            okText="Edit"
-            cancelText="Cancel"
+            title="Cập nhật giá vàng"
+            okText="cập nhật"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpdateGoldPrice}
         >
             {contextHolder}
-            <label>Gold Price:</label>
+            <label>Giá Vàng:</label>
             <Input
                 type="number"
                 placeholder="Price"
@@ -382,7 +382,7 @@ const BasicTable = () => {
 
     const columns = [
         {
-            title: 'GoldID',
+            title: 'ID Vàng' ,
             dataIndex: 'GoldID',
             ...getColumnSearchProps('GoldID'),
             key: 'GoldID',
@@ -400,7 +400,7 @@ const BasicTable = () => {
             ...getColumnSearchProps('GoldAgeID'),
         },
         {
-            title: 'Cân nặng',
+            title: 'Trọng lượng',
             dataIndex: 'GoldWeight',
 
         },
@@ -423,7 +423,7 @@ const BasicTable = () => {
                         e.stopPropagation();
                         handleGetGoldByID(record.GoldID)
                     }
-                    }>EDIT PRICE</Button>
+                    }>Cập nhật giá</Button>
                 </Space >
             ),
         },
@@ -456,7 +456,7 @@ const BasicTable = () => {
                         <ButtonCustomize
                             variant="contained"
                             // component={RouterLink}
-                            nameButton="Add Gold"
+                            nameButton="Thêm mới vàng"
                             width="15%"
                             onClick={handleOpenCreateModal}
                             startIcon={<AddCircleOutlineIcon />}

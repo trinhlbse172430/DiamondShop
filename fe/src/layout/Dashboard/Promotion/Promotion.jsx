@@ -48,7 +48,7 @@ const Promotion = () => {
         loadAllPromotion();
     }, []);
 
-    // --------------------- HANDLE OPEN CREATE GOLD ----------------------------
+    // --------------------- HANDLE OPEN CREATE PROMOTION ----------------------------
     const handleOpenCreateModal = () => {
         setModalCreateVisible(true);
 
@@ -238,7 +238,7 @@ const Promotion = () => {
 
     const columns = [
         {
-            title: 'PromotionID',
+            title: 'Mã chương trình khuyến mãi',
             dataIndex: 'PromotionID',
             key: 'PromotionID',
             sorter: (a, b) => a.PromotionID.length - b.PromotionID.length,
@@ -277,7 +277,7 @@ const Promotion = () => {
             key: 'action',
             render: (text, record) => (
                 <Space size="middle">
-                    <Button onClick={(e) => loadDataEdit(record.PromotionID)}>EDIT</Button>
+                    <Button onClick={(e) => loadDataEdit(record.PromotionID)}>Cập nhật</Button>
                 </Space>
             ),
         },
@@ -301,7 +301,7 @@ const Promotion = () => {
                         <ButtonCustomize
                             variant="contained"
                             // component={RouterLink}
-                            nameButton="Add Promotion"
+                            nameButton="Thêm mới chương trình khuyến mãi"
                             width="15%"
                             onClick={handleOpenCreateModal}
                             startIcon={<AddCircleOutlineIcon />}

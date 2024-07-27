@@ -154,11 +154,11 @@ export default function DashboardDefault() {
                     <AnalyticEcommerce title="Tổng doanh thu tháng này" count={numberToVND(incomeByMonth)} isLoss color="warning" extra="$20,395" unit="VND" />
                 </Grid>
                 <Grid item xs={12} sm={6} md={4} lg={3}>
-                    <AnalyticEcommerce title="Số lượng đơn hàng tháng này" count={countOrder} extra="356" unit="order" />
+                    <AnalyticEcommerce title="Số đơn hàng tháng này" count={countOrder} extra="356" unit="đơn hàng" />
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={4} lg={3}>
-                    <AnalyticEcommerce title="Lượng đơn hàng hủy" count={countOrderCancel} isLoss color="warning" extra="1,943" unit="order" />
+                    <AnalyticEcommerce title="Số lượng đơn hàng hủy" count={countOrderCancel} isLoss color="warning" extra="1,943" unit="đơn hàng" />
                 </Grid>
 
 

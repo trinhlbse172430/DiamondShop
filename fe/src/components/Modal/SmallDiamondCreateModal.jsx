@@ -47,7 +47,7 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
 
     const handleCreateDiamond = async () => {
         //check if all fields are filled
-        if (!DiaOriginID || !DiaColorID || !DiaWeight) {
+        if (!DiaOriginID || !DiaColorID || !DiaWeight || !DiaPrice) {
             openNotificationWithIcon('error', 'Please fill all fields');
             return;
         }
@@ -120,19 +120,19 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
     return (
         <Modal
             visible={visible}
-            title="Create Small Diamond"
-            okText="Create"
-            cancelText="Cancel"
+            title="Tạo mới kim cương tấm"
+            okText="Tạo mới"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleCreateDiamond}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Dia Origin:</label>
+                <label>Nguồn gốc kim cương tấm:</label>
                 {DiaOriginList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond origin"
+                        placeholder="Chọn nguồn gốc kim cương"
                         onChange={(value) => setDiaOriginID(value)}
                         value={DiaOriginID}
                     >
@@ -145,11 +145,11 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Dia Color:</label>
+                <label>Màu sắc kim cương tấm:</label>
                 {DiaColorList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond color"
+                        placeholder="Chọn màu sắc kim cương"
                         onChange={(value) => setDiaColorID(value)}
                         value={DiaColorID}
                     >
@@ -162,12 +162,12 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond Weight:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={20} defaultValue={1} onChange={(value) => setDiaWeight(value)} />
+                <label>Trọng lượng kim cương tấm:</label>
+                <InputNumber placeholder="Nhập trọng lượng kim cương tấm" style={{ width: '100%' }} min={1} max={20} onChange={(value) => setDiaWeight(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond Price:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={1000000000} defaultValue={100000} onChange={(value) => setDiaPrice(value)} />
+                <label>Giá kim cương tấm:</label>
+                <InputNumber placeholder="Nhập giá kim cương tấm" style={{ width: '100%' }} min={1} max={1000000000} onChange={(value) => setDiaPrice(value)} />
             </div>
         </Modal>
     );

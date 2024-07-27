@@ -158,14 +158,14 @@ const Login = () => {
                             }}
                         >
                             <Typography component="h1" variant="h5" sx={{ color: '#ffffff' }}>
-                                Username
+                                Tài khoản
                             </Typography>
-                            <Input placeholder="username" prefix={<UserOutlined />} onChange={(e) => setData({ ...data, username: e.target.value })} />
+                            <Input placeholder="tài khoản" prefix={<UserOutlined />} onChange={(e) => setData({ ...data, username: e.target.value })} />
                             <Typography component="h1" variant="h5" sx={{ color: '#ffffff' }}>
-                                Password
+                                Mật khẩu
                             </Typography>
                             <Input.Password
-                                placeholder="password"
+                                placeholder="mật khẩu"
                                 iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
                                 onChange={(e) => setData({ ...data, password: e.target.value })}
                             />

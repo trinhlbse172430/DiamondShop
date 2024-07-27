@@ -91,7 +91,10 @@ const ProductCreateModal = ({ visible, onCreate, onCancel }) => {
         loadProTypeList();
     }, []);
 
-    
+    //check all input
+    // useEffect(() => {
+    //     console.log('smallDiamondID: ', smallDiamondId)
+    // }, [proTypeId, goldId, diamondId, smallDiamondId, smallDiamondQuantity, wagePrice]);
 
     const handleUpLoadImage = async () => {
         try {
@@ -184,19 +187,19 @@ const ProductCreateModal = ({ visible, onCreate, onCancel }) => {
     return (
         <Modal
             visible={visible}
-            title="Create Product"
-            okText="Create"
-            cancelText="Cancel"
+            title="Tạo mới sản phẩm"
+            okText="Tạo mới"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpLoadImage}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>ProType:</label>
+                <label>Loại sản phẩm:</label>
                 {proTypeList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select proType"
+                        placeholder="Chọn loại sản phẩm"
                         onChange={(value) => setProTypeId(value)}
                         value={proTypeId}
                     >
@@ -209,15 +212,15 @@ const ProductCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Product Name:</label>
-                <Input placeholder="Product Name" value={productName} onChange={(e) => setProductName(e.target.value)} />
+                <label>Tên sản phẩm:</label>
+                <Input placeholder="Nhập tên sản phẩm" value={productName} onChange={(e) => setProductName(e.target.value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Gold:</label>
+                <label>ID Vàng:</label>
                 {goldList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select gold"
+                        placeholder="Chọn ID vàng"
                         onChange={(value) => setGoldId(value)}
                         value={goldId}
                     >
@@ -230,11 +233,11 @@ const ProductCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond:</label>
+                <label>Mã Kim Cương:</label>
                 {diamondList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond"
+                        placeholder="Chọn mã kim cương"
                         onChange={(value) => setDiamondId(value)}
                         value={diamondId}
                     >
@@ -247,11 +250,11 @@ const ProductCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Small Diamond:</label>
+                <label>Kim Cương tấm:</label>
                 {smallDiamondList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond"
+                        placeholder="Chọn Mã kim cương tấm"
                         onChange={(value) => setSmallDiamondId(value)}
                         value={smallDiamondId}
                     >
@@ -264,19 +267,19 @@ const ProductCreateModal = ({ visible, onCreate, onCancel }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Small Diamond Quantity:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={100} defaultValue={1} onChange={(value) => setSmallDiamondQuantity(value)} />
+                <label>Số lượng kim cương tấm:</label>
+                <InputNumber placeholder="Nhập số lượng viên tấm" style={{ width: '100%' }} min={1} max={100}  onChange={(value) => setSmallDiamondQuantity(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Wage Price:</label>
-                <InputNumber style={{ width: '100%' }} min={1} defaultValue={1} onChange={(value) => setWagePrice(value)} />
+                <label>Tiền công:</label>
+                <InputNumber placeholder="Nhập tiền công" style={{ width: '100%' }} min={1}  onChange={(value) => setWagePrice(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Ration:</label>
+                <label>Tỉ lệ áp giá:</label>
                 <InputNumber style={{ width: '100%' }} min={1} max={100} defaultValue={100} onChange={(value) => setRation(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Product Image:</label>
+                <label>Hình sản phẩm:</label>
                 <MuiInput
                     type="file"
                     inputProps={{ accept: "image/*" }}

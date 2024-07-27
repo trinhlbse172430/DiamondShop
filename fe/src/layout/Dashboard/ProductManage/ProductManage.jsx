@@ -82,7 +82,7 @@ const BasicTable = () => {
     };
 
 
-    // --------------------- HANDLE OPEN CREATE EMPLOYEE ----------------------------
+    // --------------------- HANDLE OPEN CREATE PRODUCT----------------------------
     const handleOpenCreateModal = () => {
         setModalCreateVisible(true);
     };
@@ -267,12 +267,12 @@ const BasicTable = () => {
             ...getColumnSearchProps('GoldID'),
         },
         {
-            title: 'ID kim cương',
+            title: 'Mã kim cương',
             dataIndex: 'DiamondID',
 
         },
         {
-            title: 'ID kim cương nhỏ',
+            title: 'Mã kim cương tấm',
             dataIndex: 'DiamondSmallID',
         },
         {
@@ -288,7 +288,7 @@ const BasicTable = () => {
             dataIndex: 'Currency',
         },
         {
-            title: 'Ration',
+            title: 'Tỉ lệ áp giá',
             dataIndex: 'Ration',
         },
         //button edit
@@ -320,7 +320,7 @@ const BasicTable = () => {
                         <ButtonCustomize
                             onClick={handleOpenCreateModal}
                             variant="contained"
-                            nameButton="Add product"
+                            nameButton="Tạo mới sản phẩm"
                             width="15%"
                             startIcon={<AddCircleOutlineIcon />}
                         />

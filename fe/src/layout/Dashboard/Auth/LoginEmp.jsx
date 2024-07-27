@@ -168,7 +168,7 @@ const LoginEmp = () => {
                         </Link>
 
                         <Typography component="h1" variant="h5" sx={{ textAlign: 'center', color: '#ffffff' }}>
-                            Employee Login
+                            Nhân viên đăng nhập
                         </Typography>
                         <Box
                             component="form"
@@ -183,14 +183,14 @@ const LoginEmp = () => {
                             }}
                         >
                             <Typography component="h1" variant="h5" sx={{ color: '#ffffff' }}>
-                                Username
+                                Tài khoản
                             </Typography>
-                            <Input placeholder="username" prefix={<UserOutlined />} onChange={(e) => setData({ ...data, username: e.target.value })} />
+                            <Input placeholder="tài khoản" prefix={<UserOutlined />} onChange={(e) => setData({ ...data, username: e.target.value })} />
                             <Typography component="h1" variant="h5" sx={{ color: '#ffffff' }}>
-                                Password
+                                Mật khẩu
                             </Typography>
                             <Input.Password
-                                placeholder="password"
+                                placeholder="mật khẩu"
                                 iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
                                 onChange={(e) => setData({ ...data, password: e.target.value })}
                             />
@@ -202,14 +202,14 @@ const LoginEmp = () => {
                                 onClick={login}
                                 sx={{ mt: 3, mb: 3, py: 1.5 }}
                             >
-                                Login
+                                Đăng nhập
                             </Button>
 
                             <Grid container>
                                 <Grid item xs>
-                                    <StyledNavLink to="/reset-password" variant="body2">
+                                    {/* <StyledNavLink to="/reset-password" variant="body2">
                                         Forgot password?
-                                    </StyledNavLink>
+                                    </StyledNavLink> */}
                                 </Grid>
                                 <Grid item>
                                     {/* <StyledNavLink to="/sign-up" variant="body2">

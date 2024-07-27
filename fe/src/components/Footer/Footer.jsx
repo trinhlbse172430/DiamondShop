@@ -22,7 +22,7 @@ const Footer = () => {
                                 <li>
                                     <a href="mailto:caohungdiamond@gmail.com">
                                         <i className="fa-solid fa-envelope"></i>
-                                        caohungdiamond@gmail.com
+                                        eleanordiamond@gmail.com
                                     </a>
                                 </li>
                                 <li>
@@ -102,9 +102,10 @@ const Footer = () => {
                                     </a>
                                 </li>
                             </ul>
-                            <span className="widget-title">Hệ thống showrooms</span>
+                            {/* <span className="widget-title">Hệ thống showrooms</span>
                             <div className="is-divider small"></div>
                             <span>CN Hồ Chí Minh</span>
+                            <span>CN Cần Thơ</span> */}
                             <div>
                                 <iframe src="about:blank" width="600" height="150" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.561302753198!2d106.678847!3d10.7621784!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27c97a01124ab137!2zTmjhuqtuIGtpbSBjxrDGoW5nIC0gQ2FvIEjDuW5nIERpYW1vbmQ!5e0!3m2!1svi!2s!4v1657709223661!5m2!1svi!2s"></iframe>
                                 <noscript>

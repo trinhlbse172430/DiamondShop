@@ -71,15 +71,15 @@ const PromotionCreateModal = ({ visible, onCreate, onCancel }) => {
     return (
         <Modal
             visible={visible}
-            title="Create Promotion"
-            okText="Create"
-            cancelText="Cancel"
+            title="Tạo mới chương trình khuyến mãi"
+            okText="Tạo mới"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleCreatePromotion}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Promotion name:</label>
+                <label>Tên chương trình khuyến mãi:</label>
                 <Input
                     placeholder="Enter promotion name"
                     value={promName}
@@ -87,26 +87,26 @@ const PromotionCreateModal = ({ visible, onCreate, onCancel }) => {
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Start Date:</label>
+                <label>Ngày bắt đầu chương trình khuyến mãi:</label>
                 <DatePicker
                     style={{ width: '100%' }}
-                    placeholder="Select start date"
+                    placeholder="Chọn ngày bắt đầu chương trình khuyến mãi"
                     value={startDate}
                     onChange={(date) => setStartDate(date ? dayjs(date) : null)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>End Date:</label>
+                <label>Ngày kết thức chương trình khuyến mãi:</label>
                 <DatePicker
                     style={{ width: '100%' }}
-                    placeholder="Select end date"
+                    placeholder="Chọn ngày kết thức chương trình khuyến mãi"
                     value={endDate}
                     onChange={(date) => setEndDate(date ? dayjs(date) : null)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Promotion Percent:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={100} defaultValue={1} onChange={(value) => setPromPercent(value)} />
+                <label>Phần trăm khuyến mãi:</label>
+                <InputNumber placeholder="Nhập phần trăm khuyến mãi" style={{ width: '100%' }} min={1} max={100} onChange={(value) => setPromPercent(value)} />
             </div>
         </Modal>
     );

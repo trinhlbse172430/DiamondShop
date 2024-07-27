@@ -105,7 +105,7 @@ const GoldDetailModal = ({ visible, onCreate, onCancel, dataDetail }) => {
     return (
         <Modal
             visible={visible}
-            title="Gold Detail"
+            title="Thông tin chi tiết"
             okText="Create"
             cancelText="Cancel"
             onCancel={onCancel}
@@ -114,19 +114,19 @@ const GoldDetailModal = ({ visible, onCreate, onCancel, dataDetail }) => {
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Gold ID: {dataDetail.GoldID}</label>
+                <label>Mã vàng: {dataDetail.GoldID}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Gold Type: {dataDetail.GoldTypeID}</label>
+                <label>Loại vàng: {dataDetail.GoldTypeID}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Gold Age ID: {dataDetail.GoldAgeID}</label>
+                <label>Mã tuổi vàng: {dataDetail.GoldAgeID}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Gold Weight: {dataDetail.GoldWeight}</label>
+                <label>Trọng lượng vàng: {dataDetail.GoldWeight}</label>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Image:</label>
+                <label>Hình ảnh:</label>
 
                 <img
                     src={dataDetail.GoldPicture}

@@ -151,20 +151,20 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, data }) => {
     return (
         <Modal
             visible={visible}
-            title="Update Product"
-            okText="Update"
-            cancelText="Cancel"
+            title="Cập nhật sản phẩm"
+            okText="Cập nhật"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpLoadImage}
         >
             {contextHolder}
 
             <div style={{ marginBottom: 16 }}>
-                <label>ProType:</label>
+                <label>Loại sản phẩm:</label>
                 {proTypeList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select proType"
+                        placeholder="Chọn loại sản phẩm"
                         onChange={(value) => setProTypeId(value)}
                         value={proTypeId}
                     >
@@ -177,15 +177,15 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, data }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Product Name:</label>
-                <Input placeholder="Product Name" value={productName} onChange={(e) => setProductName(e.target.value)} />
+                <label>Tên sản phẩm:</label>
+                <Input placeholder="Tên sản phẩm" value={productName} onChange={(e) => setProductName(e.target.value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Gold:</label>
+                <label>Mã vàng:</label>
                 {goldList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select gold"
+                        placeholder="Chọn mã vàng"
                         onChange={(value) => setGoldId(value)}
                         value={goldId}
                     >
@@ -198,11 +198,11 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, data }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Diamond:</label>
+                <label>Mã kim cương:</label>
                 {diamondList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond"
+                        placeholder="Chọn mã kim cương"
                         onChange={(value) => setDiamondId(value)}
                         value={diamondId}
                     >
@@ -215,11 +215,11 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, data }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Small Diamond:</label>
+                <label>Mã kim cương tấm:</label>
                 {smallDiamondList.length > 0 && (
                     <Select
                         style={{ width: '100%' }}
-                        placeholder="Select diamond"
+                        placeholder="Chọn mã kim cương tấm"
                         onChange={(value) => setSmallDiamondId(value)}
                         value={smallDiamondId}
                     >
@@ -232,19 +232,19 @@ const EmployeeUpdateModal = ({ visible, onCreate, onCancel, data }) => {
                 )}
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Small Diamond Quantity:</label>
+                <label>Số lượng kim cương tấm:</label>
                 <InputNumber style={{ width: '100%' }} min={1} max={100} value={smallDiamondQuantity} onChange={(value) => setSmallDiamondQuantity(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Wage Price:</label>
+                <label>Tiền công:</label>
                 <InputNumber style={{ width: '100%' }} min={1} value={parseFloat(wagePrice)} onChange={(value) => setWagePrice(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Ration:</label>
+                <label>Tỉ lệ áp giá:</label>
                 <InputNumber style={{ width: '100%' }} min={1} max={100} value={Ration} onChange={(value) => setRation(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Product Image:</label>
+                <label>Hình sản phẩm:</label>
                 <MuiInput
                     type="file"
                     inputProps={{ accept: "image/*" }}

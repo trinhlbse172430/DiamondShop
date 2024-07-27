@@ -32,6 +32,11 @@ const PromotionUpdateModal = ({ visible, onCreate, onCancel, data }) => {
             openNotificationWithIcon('error', 'Start date must be before end date');
             return;
         }
+        //check percent
+        if (PromPercent >= 49) {
+            openNotificationWithIcon('error', 'Promotion percent must be smaller than 50%');
+            return;
+        }
         axios.put(`/promotion/${data.PromotionID}`, {
             PromotionName: promName,
             PromStartDate: startDate.format('YYYY-MM-DD'),
@@ -61,41 +66,41 @@ const PromotionUpdateModal = ({ visible, onCreate, onCancel, data }) => {
     return (
         <Modal
             visible={visible}
-            title="Promotion"
-            okText="Update"
-            cancelText="Cancel"
+            title="Cập nhật chương trình khuyến mãi"
+            okText="Cập nhật"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpdatePromotion}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Promotion name:</label>
+                <label>Tên chương trình khuyến mãi:</label>
                 <Input
-                    placeholder="Enter promotion name"
+                    placeholder="Nhập tên chương trình khuyến mãi"
                     value={promName}
                     onChange={(e) => setPromName(e.target.value)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Start Date:</label>
+                <label>Chọn ngày bất đầu chương trình:</label>
                 <DatePicker
                     style={{ width: '100%' }}
-                    placeholder="Select start date"
+                    placeholder="Chọn ngày bắt đầu khuến mãi"
                     value={startDate}
                     onChange={(date) => setStartDate(date ? dayjs(date) : null)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>End Date:</label>
+                <label>Chọn ngày kết thúc khuyến mãi:</label>
                 <DatePicker
                     style={{ width: '100%' }}
-                    placeholder="Select end date"
+                    placeholder="Chọn ngày kết thúc khuyến mãi"
                     value={endDate}
                     onChange={(date) => setEndDate(date ? dayjs(date) : null)}
                 />
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Promotion Percent:</label>
+                <label>Phần trăm khuyến mãi:</label>
                 <InputNumber style={{ width: '100%' }} min={1} max={100} defaultValue={1} onChange={(value) => setPromPercent(value)} />
             </div>
         </Modal>

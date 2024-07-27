@@ -235,7 +235,7 @@ const BasicTable = () => {
 
     const columns = [
         {
-            title: 'EmployeeID',
+            title: 'Mã nhân viên',
             dataIndex: 'EmployeeID',
             width: '10%'
         },
@@ -264,7 +264,7 @@ const BasicTable = () => {
             render: text => dayjs(text).format('DD-MM-YYYY'),
         },
         {
-            title: 'Email',
+            title: 'Gmail',
             dataIndex: 'EmpGmail',
             ...getColumnSearchProps('EmpGmail'),
             key: 'EmpGmail',
@@ -331,7 +331,7 @@ const BasicTable = () => {
             key: 'action',
             render: (text, record) => (
                 <Space size="middle">
-                    <Button onClick={(e) => handleGetEmployeeById(record.EmployeeID)}>EDIT</Button>
+                    <Button onClick={(e) => handleGetEmployeeById(record.EmployeeID)}>Cập nhật</Button>
                 </Space>
             ),
         },
@@ -355,7 +355,7 @@ const BasicTable = () => {
 
                             variant="contained"
                             // component={RouterLink}
-                            nameButton="Add new employee"
+                            nameButton="Thêm mới nhân viên"
                             onClick={handleOpenCreateModal}
                             width="20%"
                             startIcon={<AddCircleOutlineIcon />}
