@@ -234,17 +234,17 @@ const BasicTable = () => {
     }
 
     const columns = [
-        // {
-        //     title: 'CusName',
-        //     dataIndex: 'CusName',
-        //     ...getColumnSearchProps('CusName'),
-        //     key: 'CusName',
-        //     sorter: (a, b) => a.CusName.length - b.CusName.length,
-        //     sortOrder: sortedInfo.columnKey === 'CusName' ? sortedInfo.order : null,
-        //     width: '8%',
-        // },
         {
-            title: 'CusAddress',
+            title: 'Tên khách hàng',
+            dataIndex: 'CusName',
+            ...getColumnSearchProps('CusName'),
+            key: 'CusName',
+            sorter: (a, b) => a.CusName.length - b.CusName.length,
+            sortOrder: sortedInfo.columnKey === 'CusName' ? sortedInfo.order : null,
+            width: '8%',
+        },
+        {
+            title: 'Địa chỉ',
             dataIndex: 'CusAddress',
             key: 'CusAddress',
             ...getColumnSearchProps('CusAddress'),
@@ -253,7 +253,7 @@ const BasicTable = () => {
             width: '3%'
         },
         {
-            title: 'CusPhone',
+            title: 'Số điện thoại',
             dataIndex: 'CusPhone',
             ...getColumnSearchProps('CusPhone'),
             key: 'CusPhone',
@@ -288,30 +288,33 @@ const BasicTable = () => {
         //     width: '8%'
         // },
         {
-            title: 'OrdStatus',
+            title: 'Trạng thái đơn hàng',
             dataIndex: 'OrdStatus',
             width: '3%',
             render: (OrdStatus) => (
                 <span>
                     {
                         OrdStatus === 5
-                            ? <Tag color="green">Complete</Tag>
+                            ? <Tag color="green">Hoàn thành</Tag>
                             : OrdStatus === 2
-                                ? <Tag color="cyan">Confirm</Tag>
+                                ? <Tag color="cyan">Xác nhận</Tag>
                                 : OrdStatus === 3
-                                    ? <Tag color="orange">Delivering</Tag>
+                                    ? <Tag color="orange">Đang vận chuyển</Tag>
                                     : OrdStatus === 4
-                                        ? <Tag color="red">Cancelled</Tag>
-                                        : <Tag color="blue">Waiting</Tag>
+                                        ? <Tag color="red">Huỷ</Tag>
+                                        : OrdStatus === 7
+                                            ? <Tag color="purple">Shipper đã giao thành công</Tag>
+                                        : <Tag color="blue">Chờ xác nhận</Tag>
                     }
                 </span>
             ),
             filters: [
-                { text: 'Waiting', value: 6 },
-                { text: 'Confirm', value: 2 },
-                { text: 'Shipping', value: 3 },
-                { text: 'Cancelled', value: 4 },
-                { text: 'Complete', value: 5 },
+                { text: 'Chờ xác nhận', value: 6 },
+                { text: 'Xác nhận', value: 2 },
+                { text: 'Đang giao hàng', value: 3 },
+                { text: 'Huỷ', value: 4 },
+                { text: 'Hoàn thành', value: 5 },
+                { text: 'Shipper đã giao hàng', value: 7 },
             ],
             onFilter: (value, record) => record.OrdStatus === value,
         },

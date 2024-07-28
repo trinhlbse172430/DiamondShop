@@ -40,7 +40,7 @@ const DrawerDashborad = () => {
     ];
 
     const links3 = [
-        { text: "Order Manage", path: "/dashboard/order" },
+        { text: "Order Management", path: "/dashboard/order" },
     ];
 
     const link6 = [

@@ -46,20 +46,20 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
     }, []);
 
     //--------------------- HANDLE CREATE GOLD ----------------------------
-    const handleCreate = async () => {
+    const handleCreateGold = async () => {
         //check if all fields are filled
         if (!GoldTypeID || !GoldAgeID || !GoldWeight || !GoldPrice) {
             openNotificationWithIcon('error', 'Please fill all fields');
             return;
         }
         //check GoldID existed else continue
-        const GoldID = GoldTypeID + GoldAgeID;
+        // const GoldID = GoldTypeID + GoldAgeID + GoldWeight;
         try {
             const response = await axios.get(`/gold`);
             const list = response.data; // Assuming response.data is an array of gold objects
 
             // Check if GoldID already exists in the list
-            const existingGold = list.find(gold => gold.GoldID === GoldID);
+            const existingGold = list.find(gold => gold.GoldID === goldid);
 
             if (existingGold) {
                 openNotificationWithIcon('error', 'GoldID already exists');
@@ -75,9 +75,10 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
         if (weight.length === 1) {
             weight = '0' + weight;
         }
+        const goldid = GoldTypeID + GoldAgeID + weight;
         try {
             axios.post(`/gold`, {
-                GoldID: GoldTypeID + GoldAgeID + weight,
+                GoldID: goldid,
                 GoldTypeID,
                 GoldAgeID,
                 GoldWeight,
@@ -111,7 +112,7 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
             okText="Tạo mới"
             cancelText="Huỷ"
             onCancel={onCancel}
-            onOk={handleCreate}
+            onOk={handleCreateGold}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>

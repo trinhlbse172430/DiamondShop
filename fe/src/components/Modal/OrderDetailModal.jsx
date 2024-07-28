@@ -166,7 +166,7 @@ const OrderDetailModal = ({ visible, onCancel, orderDetailList }) => {
 
     const columns = [
         {
-            title: 'OrderDetailID',
+            title: 'Mã chi tiết đơn hàng',
             dataIndex: 'OrderDetailID',
             ...getColumnSearchProps('OrderDetailID'),
             key: 'OrderDetailID',
@@ -175,7 +175,7 @@ const OrderDetailModal = ({ visible, onCancel, orderDetailList }) => {
             width: '1%'
         },
         {
-            title: 'ProductID',
+            title: 'Mã sản phẩm',
             dataIndex: 'ProductID',
             key: 'ProductID',
             sorter: (a, b) => moment(a.ProductID).unix() - moment(b.ProductID).unix(),
@@ -192,7 +192,7 @@ const OrderDetailModal = ({ visible, onCancel, orderDetailList }) => {
             width: '8%'
         },
         {
-            title: 'GoldID',
+            title: 'Mã vàng',
             dataIndex: 'GoldPriceID',
             ...getColumnSearchProps('GoldPriceID'),
             key: 'GoldPriceID',
@@ -202,7 +202,7 @@ const OrderDetailModal = ({ visible, onCancel, orderDetailList }) => {
         },
 
         {
-            title: 'DiaSmallPriceID',
+            title: 'Mã kim cương tấm',
             dataIndex: 'DiaSmallPriceID',
             key: 'DiaSmallPriceID',
             sorter: (a, b) => a.DiaSmallPriceID.length - b.DiaSmallPriceID.length,

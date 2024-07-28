@@ -101,7 +101,7 @@ const PromotionUpdateModal = ({ visible, onCreate, onCancel, data }) => {
             </div>
             <div style={{ marginBottom: 16 }}>
                 <label>Phần trăm khuyến mãi:</label>
-                <InputNumber style={{ width: '100%' }} min={1} max={100} defaultValue={1} onChange={(value) => setPromPercent(value)} />
+                <InputNumber style={{ width: '100%' }} min={1} max={100} value={PromPercent} onChange={(value) => setPromPercent(value)} />
             </div>
         </Modal>
     );

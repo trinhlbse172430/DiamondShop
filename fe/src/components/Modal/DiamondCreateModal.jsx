@@ -14,7 +14,7 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
     const [DiaOriginList, setDiaOriginList] = useState([]);
     const [DiaColorList, setDiaColorList] = useState([]);
     const [DiaClarityList, setDiaClarityList] = useState([]);
-    const [DiaCut, setDiaCut] = useState('Round');
+    const [DiaCut, setDiaCut] = useState(null);
     const [DiaPrice, setDiaPrice] = useState(100000);
 
     useEffect(() => {

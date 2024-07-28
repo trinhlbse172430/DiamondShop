@@ -72,46 +72,46 @@ const DeliveryModal = ({ visible, onCreate, onCancel, data }) => {
     return (
         <Modal
             visible={visible}
-            title="Update employee"
-            okText="Update"
-            cancelText="Cancel"
+            title="Cập nhật trạng thái đơn hàng"
+            okText="Cập nhật"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpdate}
         >
             {contextHolder}
             <div style={{ marginBottom: 16 }}>
-                <label>Name:</label>
+                <label>Tên khách hàng:</label>
                 <Typography>{name}</Typography>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Address:</label>
+                <label>Địa chỉ:</label>
                 <Typography>{address}</Typography>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Total Price:</label>
+                <label>Tổng giá tiền:</label>
                 <Typography>{totalPrice && numberToVND(totalPrice)}</Typography>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Phone:</label>
+                <label>Số điện thoại:</label>
                 <Typography>{phone}</Typography>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Note:</label>
+                <label>Ghi chú:</label>
                 <Typography>{note}</Typography>
             </div>
             <div style={{ marginBottom: 16 }}>
-                <label>Ship Price:</label>
+                <label>Phí giao hàng:</label>
                 <Typography>{shipPrice && numberToVND(shipPrice)}</Typography>
             </div>
             <div>
-                <label>Status:</label>
+                <label>Trạng thái:</label>
                 <Select
                     style={{ width: '100%' }}
                     placeholder="Select status"
                     onChange={handleStatusChange}
                 >
-                    <Option value="4">Cancelled</Option>
-                    <Option value="5">Complete</Option>
+                    <Option value="4">Huỷ</Option>
+                    <Option value="7">Shipper đã giao thành công</Option>
                 </Select>
             </div>
 

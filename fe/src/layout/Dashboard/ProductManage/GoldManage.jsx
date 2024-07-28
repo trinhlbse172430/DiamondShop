@@ -67,7 +67,7 @@ const EditModal = ({ visible, onCreate, onCancel, dataEdit }) => {
             onOk={handleUpdateGoldPrice}
         >
             {contextHolder}
-            <label>Giá Vàng:</label>
+            <label>Giá vàng:</label>
             <Input
                 type="number"
                 placeholder="Price"

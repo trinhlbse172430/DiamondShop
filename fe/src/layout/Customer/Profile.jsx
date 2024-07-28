@@ -93,6 +93,18 @@ export default function Page() {
             console.log(err);
         }
     };
+    
+    const handleAcceptCompleteOrder = async (OrderID) => {
+        try {
+            const response = await axios.put(`/order/${OrderID}`, {
+                OrdStatus: 5
+            });
+            console.log(response);
+            loadAllOrder();
+        }catch(error){
+            console.log(error);
+        }
+    };
 
     const handleOpenModalOrderDetail = () => {
         setModalOrderDetailVisible(true);
@@ -282,36 +294,62 @@ export default function Page() {
                             : OrdStatus === 2
                                 ? <Tag color="cyan">Đã xác nhận</Tag>
                                 : OrdStatus === 3
-                                    ? <Tag color="orange">Đang giao</Tag>
+                                    ? <Tag color="orange">Đang giao hàng</Tag>
                                     : OrdStatus === 4
                                         ? <Tag color="red">Hủy</Tag>
+                                        : OrdStatus === 7
+                                            ? <Tag color="purple">Xác nhận bên giao đã giao</Tag>
                                         : <Tag color="blue">Chờ xác nhận</Tag>
                     }
                 </span>
             ),
             filters: [
                 {
-                    text: 'Waiting',
+                    text: 'Chờ xác nhận',
                     value: 6,
                 },
                 {
-                    text: 'Confirm',
+                    text: 'Xác nhận',
                     value: 2,
                 },
                 {
-                    text: 'Shipping',
+                    text: 'Đang giao hàng',
                     value: 3,
                 },
                 {
-                    text: 'Cancelled',
+                    text: 'Đã hủy',
                     value: 4,
                 },
                 {
-                    text: 'Complete',
+                    text: 'Hoàn thành',
                     value: 5,
+                },
+                {
+                    text: 'Shipper đã giao thành công',
+                    value: 7,
                 },
             ],
             onFilter: (value, record) => record.OrdStatus === value,
+        },
+        {
+           title: ' ',
+           key: 'action',
+           dataIndex: 'OrdStatus',
+           render: (OrdStatus, record ) => (
+                <span>
+                    {
+                        //add button accept
+                        OrdStatus === 7
+                        ? <Button type="primary"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            handleAcceptCompleteOrder(record.OrderID)}}>Xác nhận</Button>
+                        : null
+                    }
+                </span>
+           ),
+           width: '8%'
+
         },
     ];
 
