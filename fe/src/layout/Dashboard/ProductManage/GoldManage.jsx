@@ -382,7 +382,7 @@ const BasicTable = () => {
 
     const columns = [
         {
-            title: 'ID Vàng' ,
+            title: 'ID vàng' ,
             dataIndex: 'GoldID',
             ...getColumnSearchProps('GoldID'),
             key: 'GoldID',

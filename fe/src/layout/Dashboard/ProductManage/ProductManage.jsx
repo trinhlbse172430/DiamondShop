@@ -215,7 +215,7 @@ const BasicTable = () => {
 
     const columns = [
         {
-            title: 'ID sản phẩm',
+            title: 'Mã sản phẩm',
             dataIndex: 'ProductID',
             ...getColumnSearchProps('ProductID'),
             key: 'ProductID',
@@ -231,7 +231,7 @@ const BasicTable = () => {
             sortOrder: sortedInfo.columnKey === 'ProName' ? sortedInfo.order : null,
         },
         {
-            title: 'ID loại sản phẩm',
+            title: 'Mã loại sản phẩm',
             dataIndex: 'ProTypeID',
             filters: [
                 {
@@ -239,16 +239,8 @@ const BasicTable = () => {
                     value: 'NHAN',
                 },
                 {
-                    text: 'Vỏ nhẫn',
-                    value: 'VONHAN',
-                },
-                {
                     text: 'Dây chuyền',
                     value: 'CHUYEN',
-                },
-                {
-                    text: 'Vỏ dây chuyền',
-                    value: 'VOCHUYEN',
                 },
                 {
                     text: 'Vòng tay',
@@ -262,7 +254,7 @@ const BasicTable = () => {
             onFilter: (value, record) => record.ProTypeID.indexOf(value) === 0,
         },
         {
-            title: 'ID vàng',
+            title: 'Mã vàng',
             dataIndex: 'GoldID',
             ...getColumnSearchProps('GoldID'),
         },

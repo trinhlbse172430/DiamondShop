@@ -4,22 +4,22 @@ module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.bulkInsert(
 			"GoldAges",
-			[
+			[	
 				{
-					"GoldAgeID": "10K",
-					"GoldAgeName": "Vàng 416"
-				},
-				{
-					"GoldAgeID": "14K",
-					"GoldAgeName": "Vàng 585"
+				"GoldAgeID": "24K",
+				"GoldAgeName": "Vàng 99"
 				},
 				{
 					"GoldAgeID": "18K",
 					"GoldAgeName": "Vàng 75"
 				},
 				{
-					"GoldAgeID": "24K",
-					"GoldAgeName": "Vàng 99"
+					"GoldAgeID": "14K",
+					"GoldAgeName": "Vàng 585"
+				},
+				{
+					"GoldAgeID": "10K",
+					"GoldAgeName": "Vàng 416"
 				},
 				{
 					"GoldAgeID": "8K",

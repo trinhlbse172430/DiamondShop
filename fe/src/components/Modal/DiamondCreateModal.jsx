@@ -219,14 +219,14 @@ const DiamondCreateModal = ({ visible, onCreate, onCancel }) => {
                     onChange={(value) => setDiaCut(value)}
                     value={DiaCut}
                 >
-                    <Option value="Round">Round</Option>
-                    <Option value="Oval">Oval</Option>
-                    <Option value="Marquise">Marquise</Option>
-                    <Option value="Pear">Pear</Option>
-                    <Option value="Heart">Heart</Option>
-                    <Option value="Emerald">Emerald</Option>
-                    <Option value="Princess">Princess</Option>
-                    <Option value="Radiant">Radiant</Option>
+                    <Option value="Round">Hình tròn: Round</Option>
+                    <Option value="Oval">Hình bầu dục: Oval</Option>
+                    <Option value="Marquise">Hình đôi mắt: Marquise</Option>
+                    <Option value="Pear">Hình giọt lệ: Pear</Option>
+                    <Option value="Heart">Hình trái tim: Heart</Option>
+                    <Option value="Emerald">Hình chữ nhật với 4 góc đã được mài: Emerald</Option>
+                    <Option value="Princess">Hình vuông nhọn ở 4 đỉnh: Princess</Option>
+                    <Option value="Radiant">Hình vuông với 4 góc đã được mài: Radiant</Option>
                 </Select>
             </div>
         </Modal>

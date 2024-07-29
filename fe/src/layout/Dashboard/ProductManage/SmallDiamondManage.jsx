@@ -462,7 +462,7 @@ const BasicTable = () => {
                     );
                 }
             },
-            ...getColumnSearchProps('DiaOriginID'),
+            ...getColumnSearchProps('DiaSmallOriginID'),
         },
         {
             title: 'Trọng lượng',

@@ -52,15 +52,20 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
             openNotificationWithIcon('error', 'Please fill all fields');
             return;
         }
+        //create gold
+        let weight = GoldWeight.toString();
+        //if number 1 -> 01
+        if (weight.length === 1) {
+            weight = '0' + weight;
+        }
         //check GoldID existed else continue
-        // const GoldID = GoldTypeID + GoldAgeID + GoldWeight;
+        const GoldID = GoldTypeID + GoldAgeID + weight;
         try {
             const response = await axios.get(`/gold`);
             const list = response.data; // Assuming response.data is an array of gold objects
 
             // Check if GoldID already exists in the list
-            const existingGold = list.find(gold => gold.GoldID === goldid);
-
+            const existingGold = list.find(gold => gold.GoldID === GoldID);
             if (existingGold) {
                 openNotificationWithIcon('error', 'GoldID already exists');
                 return;
@@ -68,23 +73,35 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
         } catch (error) {
             console.error(error);
         }
-
-        //create gold
-        let weight = GoldWeight.toString();
-        //if number 1 -> 01
-        if (weight.length === 1) {
-            weight = '0' + weight;
-        }
-        const goldid = GoldTypeID + GoldAgeID + weight;
         try {
             axios.post(`/gold`, {
-                GoldID: goldid,
+                GoldID: GoldID,
                 GoldTypeID,
                 GoldAgeID,
                 GoldWeight,
                 GoldPrice,
                 GoldPicture: 'picture',
                 GoldUnit: 'chỉ'
+            }).then((response) => {
+                openNotificationWithIcon('success', 'Create gold successfully');
+                console.log(response);
+                onCreate();
+            });
+        } catch (error) {
+            console.log(error);
+        }
+
+        try {
+            axios.post(`/gold_price`, {
+                GoldPriceID: GoldID,
+                GoldTypeID,
+                GoldAgeID,
+                GoldWeight,
+                GoldPrice,
+                GoldInputDate : moment().format('YYYY-MM-DD'),
+                GoldPicture: 'picture',
+                GoldUnit: 'chỉ',
+                Currency: 'VND'
             }).then((response) => {
                 openNotificationWithIcon('success', 'Create gold successfully');
                 console.log(response);
@@ -143,7 +160,7 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
                     >
                         {GoldAgeList.map((goldAge) => (
                             <Option key={goldAge.GoldAgeID} value={goldAge.GoldAgeID}>
-                                {goldAge.GoldAgeName}
+                                {goldAge.GoldAgeID}
                             </Option>
                         ))}
                     </Select>
@@ -151,7 +168,7 @@ const GoldCreateModal = ({ visible, onCreate, onCancel }) => {
             </div>
             <div style={{ marginBottom: 16 }}>
                 <label>Trọng lượng vàng:</label>
-                <InputNumber  placeholder="Nhập trọng lượng vàng" style={{ width: '100%' }} min={1} max={20} onChange={(value) => setGoldWeight(value)} />
+                <InputNumber  placeholder="Nhập trọng lượng vàng" style={{ width: '100%' }} min={1} max={99} onChange={(value) => setGoldWeight(value)} />
             </div>
             <div style={{ marginBottom: 16 }}>
                 <label>Giá vàng:</label>

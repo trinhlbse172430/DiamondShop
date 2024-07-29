@@ -89,6 +89,7 @@ const Header = () => {
         try {
             localStorage.removeItem("token");
             localStorage.removeItem("role");
+            localStorage.removeItem("cart");
             navigate("/sign-in");
         } catch (error) {
             console.error(error);

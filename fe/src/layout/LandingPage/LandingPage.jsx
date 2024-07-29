@@ -9,6 +9,8 @@ import { Card } from 'antd'
 import '../../components/Header/styles.css';
 import Banner from '../../image/banner2.jpg'
 import SmallBanner from '../../image/smallBanner.png'
+import SmallBanner2 from '../../image/smallBanner2.png'
+import SmallBanner3 from '../../image/smallBanner3.png'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ProductItem from '../Product/Components/ProductItem';
@@ -385,7 +387,7 @@ const Home = () => {
                             <div className="col-inner">
                                 <div className="img has-hover x md-x lg-x y md-y lg-y" id="image_296087787" style={{ width: '100%' }}>
                                     <div className="img-inner dark">
-                                        <img decoding="async" width="1020" height="355" src={SmallBanner} className="attachment-large size-large entered lazyloaded" alt="nhan nu Home Page" />
+                                        <img decoding="async" width="1020" height="355" src={SmallBanner3} className="attachment-large size-large entered lazyloaded" alt="nhan nu Home Page" />
                                     </div>
                                 </div>
                             </div>
@@ -422,7 +424,7 @@ const Home = () => {
                             <div className="col-inner">
                                 <div className="img has-hover x md-x lg-x y md-y lg-y" id="image_296087787" style={{ width: '100%' }}>
                                     <div className="img-inner dark">
-                                        <img decoding="async" width="1020" height="355" src={SmallBanner} className="attachment-large size-large entered lazyloaded" alt="nhan nu Home Page" />
+                                        <img decoding="async" width="1020" height="355" src={SmallBanner2} className="attachment-large size-large entered lazyloaded" alt="nhan nu Home Page" />
                                     </div>
                                 </div>
                             </div>
