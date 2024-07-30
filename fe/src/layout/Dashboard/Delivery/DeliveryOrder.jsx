@@ -311,7 +311,7 @@ const BasicTable = () => {
             filters: [
                 { text: 'Chờ xác nhận', value: 6 },
                 { text: 'Xác nhận', value: 2 },
-                { text: 'Đang giao hàng', value: 3 },
+                { text: 'Đang vận chuyển', value: 3 },
                 { text: 'Huỷ', value: 4 },
                 { text: 'Hoàn thành', value: 5 },
                 { text: 'Shipper đã giao hàng', value: 7 },

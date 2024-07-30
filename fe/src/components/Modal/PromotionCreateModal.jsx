@@ -81,7 +81,7 @@ const PromotionCreateModal = ({ visible, onCreate, onCancel }) => {
             <div style={{ marginBottom: 16 }}>
                 <label>Tên chương trình khuyến mãi:</label>
                 <Input
-                    placeholder="Enter promotion name"
+                    placeholder="Nhập tên chương trình khuyến mãi"
                     value={promName}
                     onChange={(e) => setPromName(e.target.value)}
                 />

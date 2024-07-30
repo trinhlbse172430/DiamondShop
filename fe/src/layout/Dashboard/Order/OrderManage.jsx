@@ -417,37 +417,43 @@ const BasicTable = () => {
                 <span>
                     {
                         OrdStatus === 5
-                            ? <Tag color="green">Complete</Tag>
+                            ? <Tag color="green">Hoàn thành</Tag>
                             : OrdStatus === 2
-                                ? <Tag color="cyan">Confirm</Tag>
+                                ? <Tag color="cyan">Xác nhận</Tag>
                                 : OrdStatus === 3
-                                    ? <Tag color="orange">Delivering</Tag>
+                                    ? <Tag color="orange">Đang vận chuyển</Tag>
                                     : OrdStatus === 4
-                                        ? <Tag color="red">Cancelled</Tag>
-                                        : <Tag color="blue">Waiting</Tag>
+                                        ? <Tag color="red">Huỷ</Tag>
+                                        : OrdStatus === 7
+                                            ? <Tag color="purple">Shipper đã giao hàng</Tag>
+                                        : <Tag color="blue">Chờ xác nhận</Tag>
                     }
                 </span>
             ),
             filters: [
                 {
-                    text: 'Waiting',
+                    text: 'Chờ xác nhận',
                     value: 6,
                 },
                 {
-                    text: 'Confirm',
+                    text: 'Xác nhận',
                     value: 2,
                 },
                 {
-                    text: 'Shipping',
+                    text: 'Đang vận chuyển',
                     value: 3,
                 },
                 {
-                    text: 'Cancelled',
+                    text: 'Huỷ',
                     value: 4,
                 },
                 {
-                    text: 'Complete',
+                    text: 'Hoàn thành',
                     value: 5,
+                },
+                {
+                    text: 'Shipper đã giao hàng',
+                    value: 7,
                 },
             ],
             onFilter: (value, record) => record.OrdStatus === value,

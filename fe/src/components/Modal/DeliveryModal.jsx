@@ -111,15 +111,15 @@ const DeliveryModal = ({ visible, onCreate, onCancel, data }) => {
                     onChange={handleStatusChange}
                 >
                     <Option value="4">Huỷ</Option>
-                    <Option value="7">Shipper đã giao thành công</Option>
+                    <Option value="7">Shipper đã giao hàng</Option>
                 </Select>
             </div>
 
             {status === 4 && (
                 <div style={{ marginTop: 16 }}>
-                    <label>Reason:</label>
+                    <label>Lí do:</label>
                     <Input.TextArea
-                        placeholder="Input reason"
+                        placeholder="Nhập lí do huỷ đơn hàng"
                         onChange={(e) => setCancelText(e.target.value)}
                     />
                 </div>

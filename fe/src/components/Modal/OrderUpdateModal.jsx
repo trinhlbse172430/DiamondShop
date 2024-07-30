@@ -68,17 +68,17 @@ const CreateModal = ({ visible, onCreate, onCancel, deliveryEmployeeList, orderI
     return (
         <Modal
             visible={visible}
-            title="Create Order"
-            okText="Update"
-            cancelText="Cancel"
+            title="Cập nhật đơn hàng"
+            okText="Cập nhật"
+            cancelText="Huỷ"
             onCancel={onCancel}
             onOk={handleUpdate}
         >
             <div style={{ marginBottom: 16 }}>
-                <label>Employee:</label>
+                <label>Nhân viên giao hàng:</label>
                 <Select
                     style={{ width: '100%' }}
-                    placeholder="Select employee"
+                    placeholder="Chọn nhân viên giao hàng"
                     onChange={handleEmployeeChange}
                     value={employeeId}
                 >
@@ -90,24 +90,24 @@ const CreateModal = ({ visible, onCreate, onCancel, deliveryEmployeeList, orderI
                 </Select>
             </div>
             <div>
-                <label>Status:</label>
+                <label>Trạng thái đơn hàng:</label>
                 <Select
                     style={{ width: '100%' }}
-                    placeholder="Select status"
+                    placeholder="Chọn trạng thái đơn hàng"
                     onChange={handleStatusChange}
                 >
                     {role === 'Admin' ? (
                         <>
-                            <Option value="2">Confirm</Option>
-                            <Option value="3">Delivering</Option>
-                            <Option value="4">Cancelled</Option>
-                            <Option value="5">Complete</Option>
+                            <Option value="2">Xác nhận</Option>
+                            <Option value="3">Đang vận chuyển</Option>
+                            <Option value="4">Huỷ</Option>
+                            <Option value="5">Hoàn thành</Option>
+                            <Option value="7">Shipper đã giao hàng</Option>
                         </>
                     ) : role === 'Sale' ? (
                         <>
-                            <Option value="2">Confirm</Option>
-                            <Option value="3">Delivering</Option>
-                            <Option value="4">Cancelled</Option>
+                            <Option value="2">Xác nhận</Option>
+                            <Option value="3">Đang vận chuyển</Option>
                         </>
                     ) : (
                         <>
